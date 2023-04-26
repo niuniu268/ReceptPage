@@ -68,33 +68,3 @@ for (let i = 0; i <  lis.length; i++){
 
     };
 }
-
-// fulfill elevator function
-
-let header = document.querySelector('.header');
-let banner = document.querySelector('.banner');
-let search = document.querySelector('.search');
-let searchM = document.querySelector('.search-m');
-let form = document.querySelector('.form');
-let searchL = document.querySelector('.search_logo');
-
-document.onscroll = ()=>{
-    let top = document.documentElement.scrollTop || document.body.scrollTop;
-    let headerHeight =  header.offsetHeight;
-    let bannerHeight = banner.offsetHeight;
-
-    if(top >= headerHeight + bannerHeight){
-
-        search.className = 'search search-fix';
-        searchM.computedStyleMap.height = '50px';
-        form.style.top = '8px';
-        searchL.style.display = 'block';
-
-    }else{
-
-        search.className = 'search';
-        searchM.computedStyleMap.height = '60px';
-        form.style.top = '25px';
-        searchL.style.display = 'none';
-    }
-}

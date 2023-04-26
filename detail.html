@@ -35,7 +35,7 @@
         <div class="wrap">
             <div class="firstPart">
                 <div class="firstPartLeft">
-                    <h1 id="productName">Brownie</h1>
+                    <h2 id="productName">Brownie</h2>
                     <div id="productInfo">
                         <p>
                             Det här är ett grundrecept på söt, 
@@ -78,15 +78,324 @@
                 </div>
             </div>
             <div class="secondPart">
-                <div class="secondPartLeft"></div>
-                <div class="secondPartRight"></div>
+                <div class="secondPartLeft">
+                    <div class="ingredientNum">
+                        <h2> Ingredient </h2>
+                        <p>
+                            <span>gäller för</span>
+                            <span id="piece">24</span>
+                            <span>bitar</span>
+                        </p>
+                        <p>
+                            <span>
+                                <div class="choose-amount">
+                                    <input type="text" class="person-num" value="1">
+                                    <a href="javascript:;" class="reduce disabled" >  -  </a>
+                                    <a href="javascript:;" class="add"> + </a>
+                                </div>
+                            </span>
+                            <span>person</span>
+                        </p>
+                    </div>
+                    <div>
+                        <table class="ingredientTable">
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty1" onclick="toggleDisplay('empty1', 'full1')">&#xe720;</span>
+                                    <span class="iconfont" id="full1" onclick="toggleDisplay('empty1', 'full1')">&#xe721;</span>
+                                </td>
+                                <td>
+                                    <span>Rostade hasselnötter</span>
+                                    <span id="hasselnotter">100</span>
+                                    <span>g</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty2" onclick="toggleDisplay('empty2', 'full2')"">&#xe720;</span>
+                                    <span class="iconfont" id="full2" onclick="toggleDisplay('empty2', 'full2')"">&#xe721;</span>
+                                </td>
+                                <td>
+                                    <span>Smör</span>
+                                    <span id="smor">250</span>
+                                    <span>g</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty3" onclick="toggleDisplay('empty3', 'full3')"">&#xe720;</span>
+                                    <span class="iconfont" id="full3" onclick="toggleDisplay('empty3', 'full3')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Kakao</span>
+                                    <span id="kakao">2</span>
+                                    <span>dl</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty4" onclick="toggleDisplay('empty4', 'full4')"">&#xe720;</span>
+                                    <span class="iconfont" id="full4" onclick="toggleDisplay('empty4', 'full4')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Ägg</span>
+                                    <span id="agg">4</span>
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty5" onclick="toggleDisplay('empty5', 'full5')"">&#xe720;</span>
+                                    <span class="iconfont" id="full5" onclick="toggleDisplay('empty5', 'full5')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Strösocker</span>
+                                    <span id="socker">4.5</span>
+                                    <span>dl</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty6" onclick="toggleDisplay('empty6', 'full6')"">&#xe720;</span>
+                                    <span class="iconfont" id="full6" onclick="toggleDisplay('empty6', 'full6')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Salt</span>
+                                    <span id="salt">0.5</span>
+                                    <span>tsk</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty7" onclick="toggleDisplay('empty7', 'full7')"">&#xe720;</span>
+                                    <span class="iconfont" id="full7" onclick="toggleDisplay('empty7', 'full7')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Vaniljpulver</span>
+                                    <span id="vaniljpulver">2</span>
+                                    <span>krm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty8" onclick="toggleDisplay('empty8', 'full8')"">&#xe720;</span>
+                                    <span class="iconfont" id="full8" onclick="toggleDisplay('empty8', 'full8')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Vetemjöl</span>
+                                    <span id="mjol">3</span>
+                                    <span>dl</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check-box">
+                                    <span class="iconfont" id="empty9" onclick="toggleDisplay('empty9', 'full9')"">&#xe720;</span>
+                                    <span class="iconfont" id="full9" onclick="toggleDisplay('empty9', 'full9')"">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <span>Bakpulver</span>
+                                    <span id="bakpulver">0.5</span>
+                                    <span>tsk</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="secondPartRight">
+                    <div>
+                        <table class="klartTable">
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont">&#xe880;</span>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <h3>Gör så här</h3>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe78d;</span>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" id="empty11" onclick="toggleDisplay('empty11', 'full11')">&#xe720;</span>
+                                    <span class="iconfont" id="full11" onclick="toggleDisplay('empty11', 'full11')">&#xe721;</span>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Sätt ugnen på 175°. Lägg bakplåtspapper i en fyrkantig form, ca 20x30 cm. 
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe78d;</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" id="empty12" onclick="toggleDisplay('empty12', 'full12')">&#xe720;</span>
+                                    <span class="iconfont" id="full12" onclick="toggleDisplay('empty12', 'full12')">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Hacka nötterna. Smält smöret och rör ner kakao. 
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe78d;</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" id="empty13" onclick="toggleDisplay('empty13', 'full13')">&#xe720;</span>
+                                    <span class="iconfont" id="full13" onclick="toggleDisplay('empty13', 'full13')">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Rör ihop ägg och socker i en bunke. 
+                                                Vänd ner kakaoblandningen, salt, vaniljpulver, nötter och mjölet blandat med bakpulver 
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe78d;</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" id="empty14" onclick="toggleDisplay('empty14', 'full14')">&#xe720;</span>
+                                    <span class="iconfont" id="full14" onclick="toggleDisplay('empty14', 'full14')">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Bred ut smeten i formen. Grädda i mitten av ugnen 20-25 min.  
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe78d;</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" id="empty15" onclick="toggleDisplay('empty15', 'full15')">&#xe720;</span>
+                                    <span class="iconfont" id="full15" onclick="toggleDisplay('empty15', 'full15')">&#xe721;</span>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Låt svalna och skär kakan i rutor. Förvara i kyl. 
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe78d;</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="klart-box">
+                                    <span class="iconfont" >&#xe870;</span>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <h3>Klart</h3>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="thirdPart">
-                <div class="comment">comment</div>
+                <div class="comment">
+                    <form action="#" method="get" id="commentForm">
+                        <table class="commentTable">
+                            <tr>
+                                <td>
+                                    <h3>Kommentarer</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>1</span>
+                                    <span>kommentarer</span>
+                                </td>
+                                <td id="login">
+                                    <span>Logga in</span>
+                                </td>
+                            </tr>
+                            <tr class="thirdline">
+                                <td id="tableUsername"><span> user name</span>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="what do you think about" id="tableInputComment">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div id="subDiv">
+                                        <input type="submit" class="tableInputUsername" value="Submit">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
             </div>
-
         </div>
-
     </div>
 <!-- body end -->
 
