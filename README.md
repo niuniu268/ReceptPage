@@ -25,18 +25,21 @@ Receptsidan ska innehålla följande:
 
 ![image_1](https://github.com/niuniu268/ReceptPage/blob/master/images/Screenshot1.png)
 
-In the landnningssida, there are rotating slides in which an array of receipts can be choosen. When users click the first picture under lättvärt, the browser would jump into the brownie page
+On the landing page, there are rotating slides that display a selection of recipes. When users click on the first image under 'Easy Recipes,' they will be directed to the brownie page. 
 
 - receptsidan
 
 ![image_2](https://github.com/niuniu268/ReceptPage/blob/master/images/Screenshot2.png)
 
-The receptsidan includes three sections. The first section consists of a basic introduction of brownie and the image of the brownie. When users click on the icon of Arla mat, the browser would jump into the original page.
+ The recipe page is divided into three sections. The first section provides a brief introduction to brownies and displays an image of the dessert. Clicking on the Arla Food icon will take users to the original page.
 
 ![image_3](https://github.com/niuniu268/ReceptPage/blob/master/images/Screenshot3.png)
 
-In the second section, the brownie page includes a ingredient list and a procedure list. In the ingredient list, the number of ingredient would be changed with respect to the number of eaters.
+The second section of the brownie page contains an ingredient list and a procedure list. The number of ingredients will change accord~ing to the number of servings needed.
 
 ![image_4](https://github.com/niuniu268/ReceptPage/blob/master/images/Screenshot4.png)
 
 The brownie page includes a comment section. 
+
+## Advanced information
+``` https://github.com/niuniu268/vue3-ts-route ```
